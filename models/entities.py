@@ -12,6 +12,10 @@ class Character:
     name: str
     role: str
     description: str
+    summary: str = ""
+    long_prompt: str = ""
+    portrait_path: Optional[str] = None
+    image_versions: List[str] = field(default_factory=list)
     image_paths: List[str] = field(default_factory=list)
     created_at: str = field(default_factory=lambda: datetime.utcnow().isoformat())
 
@@ -27,6 +31,7 @@ class Scene:
     prompt: str
     character_ids: List[str]
     image_path: Optional[str] = None
+    image_versions: List[str] = field(default_factory=list)
     caption: Optional[str] = None
     style: Optional[str] = None
     chapter: Optional[str] = None

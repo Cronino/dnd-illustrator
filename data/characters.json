@@ -1,0 +1,30 @@
+{
+  "d28cc1b6-dbfa-4662-b52c-82ed02b4d761": {
+    "id": "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+    "name": "Steve Rockman",
+    "role": "Warrior Poet",
+    "description": "A half-man half-golem. Formerly a bard but now a full on rockstar who battles demons",
+    "summary": "",
+    "long_prompt": "**Visual Description for Steve Rockman:**\n\n**Character Overview:**\nSteve Rockman is a striking half-man, half-golem warrior poet, embodying the essence of both artistry and brute strength. His unique composition merges the fluidity of human form with the rigid, textured features of rock and mineral, creating an intriguing juxtaposition of elegance and power.\n\n**Stable Features:**\n- **Face:** Steve has a rugged, angular face that blends human and golem attributes. His left side is a smooth, sculpted rock surface with crystalline formations, while his right side retains more human-like features, complete with a chiseled jawline and expressive hazel eyes that sparkle with creativity. \n- **Hair:** His hair is a wild mane of deep charcoal gray, resembling jagged rocks and cascading down to his shoulders. It has a metallic sheen, reflecting light like polished stone.\n- **Skin:** The human side of his skin is a warm tan, while the golem side is a mixture of slate gray and earthy tones with visible striations, resembling layers of sedimentary rock.\n\n**Color Palette:**\n- The primary color scheme includes a blend of earthy grays, rich browns, and hints of mossy green. \n- Accents of shimmering silver and gold emerge from his rock features, suggesting a magical aura and enhancing his rockstar persona.\n- Clothing incorporates deep blues and vibrant reds, echoing the colors of a sunset, symbolizing his emotional intensity.\n\n**Clothing:**\n- Steve wears a fitted, sleeveless leather tunic that allows for ease of movement, crafted from dark brown leather with ornate stitching that resembles veins of ore. The tunic is adorned with silver studs and small, gem-like embellishments.\n- His pants are made of durable, dark fabric, slightly baggy for comfort, tucked into rugged knee-high boots that are reinforced with stone-like materials for protection.\n- Around his neck hangs a flowing, tattered scarf that shifts colors with his mood, transitioning from deep blue to fiery red, signifying his poetic spirit.\n\n**Notable Gear:**\n- **Weapon:** He wields a unique instrument-weapon hybrid called the \"Rock lute,\" a large, ornate lute made from a mix of wood and stone, with strings that shimmer like metal. The instrument has the ability to unleash sonic waves that can stun enemies or inspire allies.\n- **Armored Bracers:** On his forearms, he wears bracers crafted from a combination of leather and stone, etched with ancient runes that glow faintly, enhancing his combat abilities and protective charms.\n- **Belt:** A broad, utility belt slung across his waist holds various pouches containing music notes, potions, and small stones that can be used for both crafting and battling.\n\n**Mood:**\nSteve Rockman emanates an aura of intense passion and determination. His expression often reflects a mix of playful confidence and serious resolve. When engaged in battle or performance, his stance is dynamic and fluid, embodying the duality of a warrior and an artist. The atmosphere around him is charged with creativity and energy, often illustrated with swirling colors that represent the music he creates, enhancing the scene with a sense of rhythm and motion. \n\nOverall, Steve Rockman is a visually compelling character who seamlessly blends the worlds of combat and art, making him a captivating figure in any DnD scene.",
+    "portrait_path": "data/images/char-Steve Rockman.png",
+    "image_versions": [],
+    "image_paths": [
+      "data/images/char-Steve Rockman.png"
+    ],
+    "created_at": "2025-09-17T10:40:50.784936"
+  },
+  "c7f0b250-4c53-483f-a5c3-fdfd5acf0495": {
+    "id": "c7f0b250-4c53-483f-a5c3-fdfd5acf0495",
+    "name": "Porkins Baconchops",
+    "role": "Divination Wizard",
+    "description": "A half man half pig 200 year old wizard with a bad attitude and gruff demeanor",
+    "summary": "",
+    "long_prompt": "A half man half pig 200 year old wizard with a bad attitude and gruff demeanor",
+    "portrait_path": "data/images/char-Porkins Baconchops.png",
+    "image_versions": [],
+    "image_paths": [
+      "data/images/char-Porkins Baconchops.png"
+    ],
+    "created_at": "2025-09-17T10:43:46.407709"
+  }
+}

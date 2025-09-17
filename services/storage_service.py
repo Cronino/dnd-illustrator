@@ -35,10 +35,28 @@ class StorageService:
         path.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
     # Characters
-    def create_character(self, name: str, role: str, description: str, image_paths: Optional[List[str]] = None) -> Character:
+    def create_character(
+        self,
+        name: str,
+        role: str,
+        description: str,
+        summary: str = "",
+        long_prompt: str = "",
+        portrait_path: Optional[str] = None,
+        image_paths: Optional[List[str]] = None,
+    ) -> Character:
         characters = self._read_json(self.characters_path)
         character_id = str(uuid.uuid4())
-        character = Character(id=character_id, name=name, role=role, description=description, image_paths=image_paths or [])
+        character = Character(
+            id=character_id,
+            name=name,
+            role=role,
+            description=description,
+            summary=summary,
+            long_prompt=long_prompt,
+            portrait_path=portrait_path,
+            image_paths=image_paths or [],
+        )
         characters[character_id] = character.to_dict()
         self._write_json(self.characters_path, characters)
         return character
@@ -51,6 +69,45 @@ class StorageService:
         characters = self._read_json(self.characters_path)
         data = characters.get(character_id)
         return Character(**data) if data else None
+
+    def update_character(self, character: Character) -> None:
+        characters = self._read_json(self.characters_path)
+        characters[character.id] = character.to_dict()
+        self._write_json(self.characters_path, characters)
+
+    def delete_character(self, character_id: str) -> None:
+        # Remove from characters store
+        characters = self._read_json(self.characters_path)
+        if character_id in characters:
+            del characters[character_id]
+            self._write_json(self.characters_path, characters)
+        # Remove references from campaigns
+        campaigns = self._read_json(self.campaigns_path)
+        changed = False
+        for cid, camp in campaigns.items():
+            if character_id in camp.get("character_ids", []):
+                camp["character_ids"] = [c for c in camp.get("character_ids", []) if c != character_id]
+                campaigns[cid] = camp
+                changed = True
+        if changed:
+            self._write_json(self.campaigns_path, campaigns)
+
+    def delete_scene(self, scene_id: str) -> None:
+        # Remove from scenes store
+        scenes = self._read_json(self.scenes_path)
+        if scene_id in scenes:
+            del scenes[scene_id]
+            self._write_json(self.scenes_path, scenes)
+        # Remove references from campaigns
+        campaigns = self._read_json(self.campaigns_path)
+        changed = False
+        for cid, camp in campaigns.items():
+            if scene_id in camp.get("scene_ids", []):
+                camp["scene_ids"] = [s for s in camp.get("scene_ids", []) if s != scene_id]
+                campaigns[cid] = camp
+                changed = True
+        if changed:
+            self._write_json(self.campaigns_path, campaigns)
 
     # Campaigns
     def create_campaign(self, name: str, description: str = "") -> Campaign:
@@ -129,11 +186,18 @@ class StorageService:
         return scene_objs
 
     # Images
-    def save_image_bytes(self, image_bytes: bytes, filename_hint: str) -> str:
-        file_path = self.images_dir / filename_hint
+    def save_image_bytes(self, image_bytes: bytes, filename_hint: str, campaign_id: Optional[str] = None, scene_id: Optional[str] = None) -> str:
+        if campaign_id and scene_id:
+            # Group by campaign/scene
+            target_dir = self.images_dir / f"campaign_{campaign_id}" / f"scene_{scene_id}"
+            target_dir.mkdir(parents=True, exist_ok=True)
+            file_path = target_dir / filename_hint
+        else:
+            # Legacy flat structure for characters
+            file_path = self.images_dir / filename_hint
         # Ensure unique filename
         if file_path.exists():
-            file_path = self.images_dir / f"{Path(filename_hint).stem}-{uuid.uuid4().hex[:8]}{Path(filename_hint).suffix}"
+            file_path = file_path.parent / f"{Path(filename_hint).stem}-{uuid.uuid4().hex[:8]}{Path(filename_hint).suffix}"
         file_path.write_bytes(image_bytes)
         return str(file_path)
 

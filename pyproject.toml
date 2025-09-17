@@ -11,6 +11,7 @@ dependencies = [
   "reportlab>=4.2.0",
   "python-dotenv>=1.0.1",
   "requests>=2.32.0",
+  "moviepy>=1.0.3",
 ]
 
 [project.scripts]
@@ -18,5 +19,17 @@ dnd-illustrator = "app.main:main"
 
 [tool.uv]
 dev-dependencies = []
+package = true
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+include = ["app", "ui", "models", "services"]
+exclude = ["data"]
 
 

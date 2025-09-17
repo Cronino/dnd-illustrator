@@ -1,0 +1,2 @@
+[console_scripts]
+dnd-illustrator = app.main:main

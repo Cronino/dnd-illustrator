@@ -60,4 +60,68 @@ class MontageService:
         c.save()
         return str(pdf_path)
 
+    def export_mp4(self, campaign_name: str, scenes: List[Scene], seconds_per_scene: float = 4.0, fps: int = 30, filepath: Optional[str] = None) -> str:
+        """Create a simple MP4 with slow pan/zoom (Ken Burns-style) using moviepy.
+
+        Requires moviepy to be installed.
+        """
+        try:
+            # Fix PIL.ANTIALIAS compatibility issue with newer Pillow versions
+            import PIL.Image
+            if not hasattr(PIL.Image, 'ANTIALIAS'):
+                PIL.Image.ANTIALIAS = PIL.Image.LANCZOS
+            
+            from moviepy.editor import ImageClip, concatenate_videoclips
+        except ImportError:
+            raise ImportError("MoviePy is not properly installed. Try: uv add moviepy && uv sync")
+
+        safe_name = campaign_name.replace(" ", "_")
+        mp4_path = Path(filepath) if filepath else (self.output_dir / f"{safe_name}_montage.mp4")
+
+        clips = []
+        valid_scenes = []
+        
+        for sc in scenes:
+            if not sc.image_path:
+                continue
+            
+            # Check if image exists at the stored path
+            image_path = Path(sc.image_path)
+            if not image_path.exists():
+                # Try to find the image in the old flat structure
+                old_path = self.images_dir / f"scene-{sc.id}.png"
+                if old_path.exists():
+                    image_path = old_path
+                else:
+                    continue
+                
+            try:
+                clip = ImageClip(str(image_path), duration=seconds_per_scene)
+                # Add Ken Burns effect (slow zoom)
+                zoomed = clip.resize(lambda t: 1.0 + 0.05 * (t / max(seconds_per_scene, 0.01)))
+                clips.append(zoomed)
+                valid_scenes.append(sc.title)
+            except Exception as e:
+                continue
+
+        if not clips:
+            scene_info = []
+            for sc in scenes:
+                exists = False
+                if sc.image_path:
+                    exists = Path(sc.image_path).exists()
+                    if not exists:
+                        # Check old location
+                        old_path = self.images_dir / f"scene-{sc.id}.png"
+                        exists = old_path.exists()
+                scene_info.append(f"'{sc.title}': image_path={sc.image_path}, exists={exists}")
+            raise ValueError(f"No valid scenes with images found. Scene details:\n" + "\n".join(scene_info))
+
+        try:
+            final = concatenate_videoclips(clips, method="compose")
+            final.write_videofile(str(mp4_path), fps=fps, codec="libx264", audio=False, verbose=False, logger=None)
+            return str(mp4_path)
+        except Exception as e:
+            raise RuntimeError(f"Failed to create MP4: {e}")
+
 

@@ -1,0 +1,23 @@
+{
+  "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09": {
+    "id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "name": "Test campaign",
+    "description": "Just testing!",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "scene_ids": [
+      "a64d3588-be84-4af6-9918-a0c5b10a83de",
+      "1e2bda74-244e-4237-87e7-f794e3a7a6e0",
+      "924541dd-06e8-422e-8655-9aaea31a009e",
+      "f8313790-7c02-488e-ad99-a7b23866878b",
+      "d5ad9522-bab8-4ba6-a558-c912a151ecd0",
+      "a7250bca-bff1-450d-b27b-ada71153a973",
+      "31995dc2-c4ee-498e-84e4-4fc681199834",
+      "c64ef3be-922e-4930-a6ee-a71a0fae60fc",
+      "3b699998-b69d-4ab0-a039-fb2e51809e09"
+    ],
+    "created_at": "2025-09-17T10:44:00.988504"
+  }
+}

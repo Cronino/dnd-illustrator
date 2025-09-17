@@ -1,0 +1,146 @@
+{
+  "a64d3588-be84-4af6-9918-a0c5b10a83de": {
+    "id": "a64d3588-be84-4af6-9918-a0c5b10a83de",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "Everyone arrives",
+    "prompt": "The two characters are riding a wagon down a deserted trail when they stumble across two dead horses blocking their path",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/scene-a64d3588-be84-4af6-9918-a0c5b10a83de.png",
+    "image_versions": [],
+    "caption": "Amidst the eerie silence of the forsaken trail, Steve Rockman and Porkins Baconchops grapple with the grim omen of fate, as two lifeless steeds lie sprawled before their wagon, whispering secrets of danger ahead.",
+    "style": null,
+    "chapter": "1",
+    "created_at": "2025-09-17T10:46:06.738537"
+  },
+  "1e2bda74-244e-4237-87e7-f794e3a7a6e0": {
+    "id": "1e2bda74-244e-4237-87e7-f794e3a7a6e0",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "PORKINS BECOMES A GOD",
+    "prompt": "in a surprise turn of events, porkins ascends into the sky becoming an almighty god",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/scene-1e2bda74-244e-4237-87e7-f794e3a7a6e0.png",
+    "image_versions": [],
+    "caption": "As Porkins Baconchops soared into the heavens, Steve Rockman watched in awe, realizing that even the unlikeliest of heroes can ascend to divine heights.",
+    "style": null,
+    "chapter": "2",
+    "created_at": "2025-09-17T10:48:04.504269"
+  },
+  "924541dd-06e8-422e-8655-9aaea31a009e": {
+    "id": "924541dd-06e8-422e-8655-9aaea31a009e",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "Title",
+    "prompt": "The Divine Reckoning: Porkins, now a god, faces a celestial trial that threatens to strip him of his newfound powers, while Steve must navigate the treacherous terrain of divine politics to save his friend.",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_924541dd-06e8-422e-8655-9aaea31a009e/scene-924541dd-06e8-422e-8655-9aaea31a009e.png",
+    "image_versions": [],
+    "caption": "As Porkins stands at the precipice of divinity, Steve grapples with the intricate web of celestial alliances, knowing that friendship is the ultimate gamble in this divine arena.",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:09:46.429643"
+  },
+  "f8313790-7c02-488e-ad99-a7b23866878b": {
+    "id": "f8313790-7c02-488e-ad99-a7b23866878b",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "1. Title",
+    "prompt": "The Call to Adventure",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_f8313790-7c02-488e-ad99-a7b23866878b/scene-f8313790-7c02-488e-ad99-a7b23866878b.png",
+    "image_versions": [],
+    "caption": "As the sun dipped below the horizon, casting a golden glow, Steve Rockman and Porkins Baconchops stood at the edge of destiny, a mysterious map in hand, ready to embrace the adventure that awaited beyond the familiar.",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:12:25.686681"
+  },
+  "d5ad9522-bab8-4ba6-a558-c912a151ecd0": {
+    "id": "d5ad9522-bab8-4ba6-a558-c912a151ecd0",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "2. Title",
+    "prompt": "The Gathering Storm",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_d5ad9522-bab8-4ba6-a558-c912a151ecd0/scene-d5ad9522-bab8-4ba6-a558-c912a151ecd0.png",
+    "image_versions": [],
+    "caption": "As thunder rumbled ominously overhead, Steve Rockman and Porkins Baconchops stood resolute, ready to face the tempest that would test their courage and their bond.",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:13:14.373276"
+  },
+  "a7250bca-bff1-450d-b27b-ada71153a973": {
+    "id": "a7250bca-bff1-450d-b27b-ada71153a973",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "3. Title",
+    "prompt": "Into the Abyss",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_a7250bca-bff1-450d-b27b-ada71153a973/scene-a7250bca-bff1-450d-b27b-ada71153a973.png",
+    "image_versions": [],
+    "caption": "As Steve Rockman clutched his heart, Porkins Baconchops grinned, ready to plunge into the swirling darkness of the Abyss, where whispered secrets and untold dangers awaited.",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:14:09.806393"
+  },
+  "31995dc2-c4ee-498e-84e4-4fc681199834": {
+    "id": "31995dc2-c4ee-498e-84e4-4fc681199834",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "4. Title",
+    "prompt": "The Price of Power",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_31995dc2-c4ee-498e-84e4-4fc681199834/scene-31995dc2-c4ee-498e-84e4-4fc681199834.png",
+    "image_versions": [],
+    "caption": "In the shadow of a crumbling throne, Steve Rockman confronts the heavy cost of ambition as Porkins Baconchops clutches a cursed artifact, their fates intertwined by greed and destiny.",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:15:01.557071"
+  },
+  "c64ef3be-922e-4930-a6ee-a71a0fae60fc": {
+    "id": "c64ef3be-922e-4930-a6ee-a71a0fae60fc",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "5. Title",
+    "prompt": "The Clash of Titans",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_c64ef3be-922e-4930-a6ee-a71a0fae60fc/scene-c64ef3be-922e-4930-a6ee-a71a0fae60fc.png",
+    "image_versions": [],
+    "caption": "As thunder rumbled and the ground shook, Steve Rockman and Porkins Baconchops unleashed their might in a battle that would echo through the ages.",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:16:03.888824"
+  },
+  "3b699998-b69d-4ab0-a039-fb2e51809e09": {
+    "id": "3b699998-b69d-4ab0-a039-fb2e51809e09",
+    "campaign_id": "70f0c1fe-61c2-4b16-9137-b2e2ede6fa09",
+    "title": "6. Title",
+    "prompt": "The Bonds Forged in Fire",
+    "character_ids": [
+      "d28cc1b6-dbfa-4662-b52c-82ed02b4d761",
+      "c7f0b250-4c53-483f-a5c3-fdfd5acf0495"
+    ],
+    "image_path": "data/images/campaign_70f0c1fe-61c2-4b16-9137-b2e2ede6fa09/scene_3b699998-b69d-4ab0-a039-fb2e51809e09/scene-3b699998-b69d-4ab0-a039-fb2e51809e09.png",
+    "image_versions": [],
+    "caption": "\"In the heart of the blazing forge, Steve Rockman and Porkins Baconchops unite their strengths, their friendship tempered like steel in the fiery crucible of destiny.\"",
+    "style": null,
+    "chapter": null,
+    "created_at": "2025-09-17T11:16:54.240183"
+  }
+}
